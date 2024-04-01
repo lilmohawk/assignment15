@@ -69,7 +69,7 @@ const getSupplies = () => {
 let i = 0;
 
 const getJson = async() => {
-  const url = "http://localhost:3000/api/crafts";
+  const url = "https://assignment15-ils3.onrender.com/api/crafts";
   try {
     const response = await fetch(url);
     return await response.json();
