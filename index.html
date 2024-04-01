@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1 style="display: inline;">Buy and Sell Crafts</h1>
+        <h1 id="addItem" style="display: inline;">+</h1>
+      </div>
+    </header>
+
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content">
+        <div id="popup1" class="w3-container flex">
+          <span onclick="document.getElementById('id02').style.display='none'"
+    class="w3-button w3-display-topright">&times;</span>
+          <div class="flex">
+
+            <div>
+              <h2>Make Changes to your Craft</h2>
+              <form id="addForm" action="">
+                <label for="name">Name</label><br>
+                <input id="name" name="name" type="text"> <br>
+
+                <label for="img">Select Image</label>
+                <input id="img" name="img" type="file">
+
+                <label for="desc">Description</label> <br>
+                <input id="desc" name="desc" type="textarea"> <br>
+
+                <label for="supplies">Supplies</label> <br>
+                <div id="supplies">
+                  <input name="supplies" type="text">
+                  <button id="addSupply">Add Supply</button> <br>
+                </div>
+
+                <br>
+                <br>
+                <button>Cancel</button>
+                <button type="submit">Save</button>
+                
+              </form>
+            </div>
+          </div>
+          <img class="flex1" width="100%" style="display: block; margin: 0 auto;" id="modalImg" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div id="popup" class="w3-container flex">
+          <span onclick="document.getElementById('id01').style.display='none'"
+    class="w3-button w3-display-topright">&times;</span>
+
+          <div class="flex">
+            <img class="flex1" id="modalImg" src="" alt="">
+            <div class="flex1">
+              <h1 id="modalTitle"></h1>
+              <p id="modalDesc"></p>
+              <h3>Supplies:</h3>
+              <ul id="modalSupplies"></ul>
+            </div> 
+          </div>
+
+          <img class="flex1" width="100%" style="display: block; margin: 0 auto;" id="modalImg" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row"> 
+      <div class="column" id="section1">
+      </div>
+      
+      <div class="column" id="section2">
+      </div> 
+      
+      <div class="column" id="section3">
+      </div>
+      
+      <div class="column" id="section4">
+      </div>
+    </div>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
